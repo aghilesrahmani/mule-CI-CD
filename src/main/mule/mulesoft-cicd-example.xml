@@ -9,7 +9,11 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="mulesoft-cicd-exampleFlow" doc:id="ecbc77f3-b785-40e1-bb19-5e44e3574c71" >
-		<http:listener doc:name="Listener" doc:id="13f7de03-f09b-4ed7-9fd1-8c91052f83c4" config-ref="HTTP_Listener_config" path="/jenkins"/>
+		<scheduler doc:name="Scheduler" doc:id="c81a1f63-a5bd-4f81-ba88-72636f029ff9" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
 		<ee:transform doc:name="Transform Message" doc:id="49f81e57-584d-4dc2-840b-8036a130df59" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0

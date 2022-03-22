@@ -27,7 +27,7 @@
     <configuration>
         <cloudHubDeployment>
             <uri>${uri}</uri>
-            <region>${region}</region>
+          
             <muleVersion>${mule.version}</muleVersion>
             <username>${mule.username}</username>
             <password>${mule.password}</password>

@@ -26,8 +26,8 @@
     <extensions>true</extensions>
     <configuration>
         <cloudHubDeployment>
-            <uri>https://anypoint.mulesoft.com/</uri>
-            <region>eu-west-1</region>
+            <uri>${uri}</uri>
+            <region>${region}</region>
             <muleVersion>${mule.version}</muleVersion>
             <username>${mule.username}</username>
             <password>${mule.password}</password>

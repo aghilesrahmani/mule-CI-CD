@@ -25,10 +25,10 @@ pipeline {
      stage('Deploy Development') {
       environment {
         ENVIRONMENT = 'Sandbox'
-        APP_NAME = 'testPipeline'
+        APP_NAME = 'MyFirstAppPiplines'
       }
       steps {
-            bat 'mvn -U -V -e -B -gs %M2SETTINGS% -DskipTests deploy -DmuleDeploy -Dmule.version="%MULE_VERSION%" -Danypoint.username="aghi92" -Danypoint.password="noraHACENmalak1992*" -Dcloudhub.app="%APP_NAME%" -Dcloudhub.environment="%ENVIRONMENT%" -Dcloudhub.bg="%BG%" '
+            bat 'mvn -U -V -e -B -gs %M2SETTINGS% -DskipTests deploy -DmuleDeploy -Dmule.version="%MULE_VERSION%" -Danypoint.username="aghi92" -Danypoint.password="noraHACENmalak1992*" -Dcloudhub.app="MyFirstAppPiplines" -Dcloudhub.environment="%ENVIRONMENT%" -Dcloudhub.bg="%BG%" '
       }
     }
     stage('Deploy Production') {

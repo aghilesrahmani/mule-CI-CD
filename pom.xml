@@ -35,7 +35,7 @@
             
             <applicationName>${cloudhub.app}</applicationName>
             
-            <environment>${cloudhub.environmen}</environment>
+            <environment>${cloudhub.environment}</environment>
             <businessGroup>${cloudhub.bg}</businessGroup>
             <workerType>${vCore}</workerType>
             <workers>${cloudhub.worker}</workers>

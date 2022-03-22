@@ -30,7 +30,7 @@
             <muleVersion>${mule.version}</muleVersion>
             <username>${mule.username}</username>
             <password>${mule.password}</password>
-            <server>DEV_Runtime_Premise</server>
+            
             <region>eu-west-2</region>
             <applicationName>${appname}</applicationName>
             <environment>${environment}</environment>

@@ -26,19 +26,19 @@
     <extensions>true</extensions>
     <configuration>
         <cloudHubDeployment>
-            <uri>${uri}</uri>
+            <uri>https://anypoint.mulesoft.com</uri>
           
             <muleVersion>${mule.version}</muleVersion>
-            <username>${mule.username}</username>
-            <password>${mule.password}</password>
+            <username>${anypoint.username}</username>
+            <password>${anypoint.password}</password>
             
             
-            <applicationName>${appname}</applicationName>
+            <applicationName>${cloudhub.app}</applicationName>
             
-            <environment>${environment}</environment>
-            <businessGroup>${business}</businessGroup>
+            <environment>${cloudhub.environmen}</environment>
+            <businessGroup>${cloudhub.bg}</businessGroup>
             <workerType>${vCore}</workerType>
-            <workers>${workers}</workers>
+            <workers>${cloudhub.worker}</workers>
             <objectStoreV2>true</objectStoreV2>
         </cloudHubDeployment>
        <classifier>mule-application</classifier>

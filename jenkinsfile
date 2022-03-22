@@ -6,7 +6,7 @@ pipeline {
     DEPLOY_CREDS = credentials('deploy-anypoint-user')
     MULE_VERSION = '4.4.0'
     BG = "mulesoft"
-    WORKER = "0.1"
+    WORKER = '0.1'
     M2SETTINGS = "C:\\Users\\AGRAHMANI\\.m2\\settings.xml"
   }
   stages {

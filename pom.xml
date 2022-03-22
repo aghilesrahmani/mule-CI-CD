@@ -34,7 +34,7 @@
             
             
             <applicationName>${appname}</applicationName>
-            <deploymentTarget>${target_deploy}</deploymentTarget>
+            
             <environment>${environment}</environment>
             <businessGroup>${business}</businessGroup>
             <workerType>${vCore}</workerType>
